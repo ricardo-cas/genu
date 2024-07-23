@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contador de Repositórios</title>
+</head>
+<style>
+    .contador {
+        font-size: 78px;
+        font-weight: bold;
+    }	
+</style>
+<body>
+    <h1>Contador de Repositórios Migrados pelo Genu</h1>
+    <p id="contador">0</p>
+    <button id="botao">+</button>
+
+    <script>
+        // Obtém o elemento do contador
+        const contadorElemento = document.getElementById('contador');
+
+        // Obtém o elemento do botão
+        const botaoElemento = document.getElementById('botao');
+
+        // Inicializa o contador
+        let contador = 0;
+
+        // Função de incremento
+        function incrementarContador() {
+            contador++;
+            contadorElemento.textContent = contador;
+        }
+
+        // Adiciona um ouvinte de evento de clique ao botão
+        botaoElemento.addEventListener('click', incrementarContador);
+    </script>
+</body>
+</html>
